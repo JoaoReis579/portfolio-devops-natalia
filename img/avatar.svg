@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title description">
+  <title id="title">Avatar de João Reis</title>
+  <desc id="description">Ilustração abstrata com as iniciais JR.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8e1f0"/>
+      <stop offset="1" stop-color="#f1dce7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#background)"/>
+  <circle cx="200" cy="155" r="77" fill="#76677d" opacity=".14"/>
+  <path d="M75 354c14-71 60-110 125-110s111 39 125 110" fill="#76677d" opacity=".14"/>
+  <text x="200" y="215" fill="#76677d" font-family="Arial, sans-serif" font-size="94" font-weight="700" text-anchor="middle">JR</text>
+</svg>
