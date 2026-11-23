@@ -52,6 +52,18 @@ retornou os jobs nem os logs dessas execuções quando consultados. Por isso, a 
 das falhas não é atribuída aqui. Esses resultados pertencem ao repositório de
 referência; não são execuções deste projeto.
 
+### Falhas e correções nesta cópia
+
+1. No primeiro deploy, `Configurar GitHub Pages` retornou `404` porque Pages ainda
+   estava desativado. A fonte foi habilitada como **GitHub Actions** nas
+   configurações do repositório.
+2. Na tentativa seguinte, a configuração e o upload do artefato passaram, mas
+   `deploy-pages` informou que não encontrou o artefato `github-pages`. A execução
+   seguinte, mesmo com as actions atualizadas para Node.js 24, repetiu esse erro.
+3. O workflow foi separado em jobs de build e deploy, com `needs: build` para
+   garantir que o artefato estivesse disponível antes da publicação. Na execução
+   seguinte, CI e deploy passaram e o site ficou disponível no link acima.
+
 ## Executar localmente
 
 Requer Node.js 22 ou superior.
